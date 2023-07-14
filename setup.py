@@ -13,14 +13,14 @@ NAME = "servercheck"
 DESCRIPTION = (
     "CLI to ensure that HTTP requests can be made to various server/port combinations"
 )
-URL = "https://github.com/me/myproject"
-EMAIL = "me@example.com"
-AUTHOR = "Awesome Soul"
-REQUIRES_PYTHON = ">=3.6.0"
+URL = "https://github.com/Nelson-Lamounier/async-HTTP-requests"
+EMAIL = "lamounierleao@gmail.com"
+AUTHOR = "Nelson Lamounier"
+REQUIRES_PYTHON = ">=3.7.0"
 VERSION = "0.1.0"
 
 # What packages are required for this module to be executed?
-REQUIRED = ["click"]
+REQUIRED = ["click", "requests"]
 
 # What packages are optional?
 EXTRAS = {
