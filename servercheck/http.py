@@ -2,7 +2,7 @@ import asyncio
 import requests
 import os
 
-
+#Make Concurrent Requests and Return the Results /Create the make_requests, ping, and get functions.
 def get(server):
     debug = os.getenv("DEBUG")
     try:
@@ -39,7 +39,7 @@ async def make_requests(server, results):
 
     await asyncio.gather(*tasks)
 
-
+#Open cli.py, and edit the file to pass the server information collected by the cli function to the ping_servers function.
 def ping_servers(servers):
     results = {"success": [], "failure": []}
     asyncio.run(make_requests(servers, results))
