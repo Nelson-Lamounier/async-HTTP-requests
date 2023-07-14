@@ -45,3 +45,6 @@ def cli(filename, server):
     for server in results['failure']:
         print(server)
 
+if __name__ == "__main__":
+    cli()
+
