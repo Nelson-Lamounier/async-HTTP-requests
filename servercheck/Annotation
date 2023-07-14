@@ -1,0 +1,13 @@
+Command lines to use the CLI ServerCheck
+
+1. Test Against Additional Servers Using REPL
+--> DEBUG=true PYTHONPATH=. python
+--> from servercheck.http import ping_servers
+--> servers = ('web-node1:80', 'web-node2:80', 'web-node1:3000', 'web-node2:3000', 'web-node1:8080')
+--> ping_servers(servers)
+
+2. Install the package into the virtualenv in editable mode.
+--> pip install -e .
+
+3.Run the following command to test the tool:
+--> servercheck -f example.json -s 'web-node1:80' -s 'web-node1:9000'
